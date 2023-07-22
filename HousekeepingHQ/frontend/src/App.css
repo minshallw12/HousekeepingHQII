@@ -1,5 +1,5 @@
 /*==========================
-Sidebar navigation
+Hamburger navigation
 ========================*/
 .navbar {
   position: relative;
@@ -32,6 +32,7 @@ button {
   transform: translateX(-100px);
   transition: transform ease-in-out 0.2s;
   /* transition: width ease 0.2s; */
+  top: 40px;
 }
 .menu-nav.show-menu {
   width: 100%;
