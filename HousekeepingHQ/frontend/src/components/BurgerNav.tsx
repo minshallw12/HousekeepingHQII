@@ -4,7 +4,7 @@ import { FiMenu } from 'react-icons/fi';
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
-  const ref = useRef();
+  const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handler = (event:any) => {
@@ -39,7 +39,7 @@ const Navbar = () => {
         <ul className={`menu-nav${navbarOpen ? ' show-menu' : ''}`}>
             <p onClick={()=> setNavbarOpen(false)}>Home</p>
             <p onClick={()=> setNavbarOpen(false)}>About</p>
-            <p onClick={()=> setNavbarOpen(false)}>Login</p>
+            <p onClick={()=> setNavbarOpen(false)}>Logout</p>
         </ul>
     </nav>
   
